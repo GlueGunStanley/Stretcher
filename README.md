@@ -24,7 +24,7 @@ Players may notice a delay of up to two seconds between the time a player releas
 
 ## Screenshots 📸
 <!-- ![screenshot](link) -->
-### COMING SOON!
+### `COMING SOON!`
 
 ## Download 🔽
 Check out the [releases](https://github.com/GlueGunStanley/Stretcher/releases) page for the latest resource version.
@@ -111,11 +111,10 @@ We are curently evaluating this resource for performance issues and will continu
 If you've found a bug or want to request a feature, you can go ahead and create an [issue](https://github.com/GlueGunStanley/Stretcher/issues).  
 If you've improved the resource, feel free to make a [pull request](https://github.com/GlueGunStanley/Stretcher/pulls)!  
 If you would like to support the development of more free resources like this one, a [donation](https://www.paypal.com/donate/?hosted_button_id=7YHMMWJF7CPSU) would be very much appreciated!
-<form action="https://www.paypal.com/donate" method="post" target="_top">
-<input type="hidden" name="hosted_button_id" value="7YHMMWJF7CPSU" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to donate!" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-</form> 
+
+<a href="https://www.paypal.com/donate/?hosted_button_id=7YHMMWJF7CPSU">
+    <img src="https://i.imgur.com/GjlYV1a.png" width="160" height="55" alt="Join us on Discord!">
+</a>
 
 ## Community 🤠
 <a href="https://discord.com/invite/uCKZJed3Gq">
@@ -128,4 +127,3 @@ This resource is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/li
 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en">
     <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" width="50.6" height="17.8" alt="CC BY-NC-SA 4.0">
 </a>
-
