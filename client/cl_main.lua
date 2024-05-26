@@ -115,7 +115,7 @@ Citizen.CreateThread(function()
                 local timer = 0 
                 local hold = 700 
                 activated = true
-                while IsControlPressed(0, 38) do
+                while IsControlPressed(0, Config.Keys.doors) do
                     Wait(0)
                     timer = timer + GetFrameTime() * 1000
                     if timer >= hold then

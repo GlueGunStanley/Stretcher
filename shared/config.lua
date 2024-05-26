@@ -13,7 +13,7 @@ Config.Permissions = {
 
 Config.Keys = {
     menu = 74, -- [H] 74 
-    doors = 38, -- [E] 38 (This key must be held down for 1.5 seconds)
+    doors = 38, -- [E] 38 (This key must be held down)
     take = 73, -- [X] 73
     load = 183, -- [G] 183
 }
