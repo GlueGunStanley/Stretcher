@@ -1,5 +1,5 @@
 ***
-<p align=center>Made In USA by Stanley. [Stanley Development Studios](https://discord.com/invite/uCKZJed3Gq) Copyright © 2024. All rights reserved.<p>
+<p align="center">Made In USA by Stanley. <a href="https://discord.com/invite/uCKZJed3Gq">Stanley Development Studios</a> Copyright © 2024. All rights reserved.</p>
 
 # Stretcher 🆓
 ⚠ This resource is in an early access testing period.
