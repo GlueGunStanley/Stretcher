@@ -158,7 +158,7 @@ end
 AddSeatItems(seatMenu)
 
 Citizen.CreateThread(function()
-while true do
+while IsPedOnFoot(PlayerPedId()) do
     Wait(0)
     if IsControlJustReleased(0, Config.Keys.menu) then
         TriggerEvent("cl:OpenStretcherMenu")
