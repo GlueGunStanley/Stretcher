@@ -23,8 +23,7 @@ Players may notice a delay of up to two seconds between the time a player releas
 
 
 ## Screenshots 📸
-<!-- ![screenshot](link) -->
-### `COMING SOON!`
+![screenshot](https://i.imgur.com/h3MkhlP.png)
 
 ## Download 🔽
 Check out the [releases](https://github.com/GlueGunStanley/Stretcher/releases) page for the latest resource version.
