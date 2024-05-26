@@ -30,10 +30,11 @@ Players may notice a delay of up to two seconds between the time a player releas
 Check out the [releases](https://github.com/GlueGunStanley/Stretcher/releases) page for the latest resource version.
 
 ## Installation ✅
-1. Download the latest release.
-2. Drag Stretcher into your resource folder.
-3. Go to your server.cfg, and add "start Stretcher"
-4. Configure the resource to your liking.
+**1. Download the [latest release](https://github.com/GlueGunStanley/Stretcher/releases)**  
+**2. Extract and rename the folder to `Stretcher`**  
+**3. Drag `Stretcher` into your `resources` folder**  
+**4. Go to your `server.cfg` and add `start Stretcher`**  
+**5. Configure the resource to your liking**  
 
 That's it! If everything went correctly, the next time you start your server the resource will start.
   
