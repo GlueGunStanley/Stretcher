@@ -1,3 +1,8 @@
+
+     --[[ STANLEY DEVELOPMENT STUDIOS ]]--
+--[[ https://discord.com/invite/uCKZJed3Gq ]]--
+
+ 
 RegisterCommand("stretchermenu", function()
     TriggerEvent("cl:OpenStretcherMenu")
     TriggerEvent('chat:addSuggestion', '/stretchermenu', 'Opens the stretcher interaction menu.')

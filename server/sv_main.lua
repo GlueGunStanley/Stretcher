@@ -1,3 +1,8 @@
+
+     --[[ STANLEY DEVELOPMENT STUDIOS ]]--
+--[[ https://discord.com/invite/uCKZJed3Gq ]]--
+
+ 
 local stretchers = {}
 
 RegisterNetEvent('sv:AddStretcherToTable')
