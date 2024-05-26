@@ -87,7 +87,7 @@ A default configuration comes with the resource. You may use that as a reference
 >   `powerload` is the value that is used to indicate if the vehicle supports powerload functionality.  
 >   ~~~lua
 >   Config.Vehicles = { 
->     {modelHash = "example", dist = 8.0, xOffset = 0.0, yOffset = -2.6, zOffset = -0.165, rotOffset = -90.0, doors = {"FLD", "FRD", "BLD", "BRD", "HOOD", "TRUNK", "RLD", "RRD"}, powerload = false}
+>        {modelHash = "example", dist = 8.0, xOffset = 0.0, yOffset = -2.6, zOffset = -0.165, rotOffset = -90.0, doors = {"FLD", "FRD", "BLD", "BRD", "HOOD", "TRUNK", "RLD", "RRD"}, powerload = false}
 >   }
 >   ~~~
 >#### DOOR MAPPING
