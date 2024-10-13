@@ -80,7 +80,7 @@ A default configuration comes with the resource. You may use that as a reference
 >   `dist` is the distance at which players can interact with the vehicle. The `dist` value may range from `1.0` to a maximum of `20.0`  
 >   `xOffset` determines the position of the stretcher in the vehicle to the left or right relative to the vehicle.  
 >   `yOffset` determines the position of the stretcher in the vehicle to the front or rear relative to the vehicle.  
->   `yOffset` determines the position of the stretcher in the vehicle higher or lower in height relative to the vehicle.  
+>   `zOffset` determines the position of the stretcher in the vehicle higher or lower in height relative to the vehicle.  
 >   `rotOffset` determines the direction that the stretcher is facing relative to the vehicle.    
 >   `doors` determines which doors are openned and closed when interacting with the vehicle.  
 >   `powerload` is the value that is used to indicate if the vehicle supports powerload functionality.  
