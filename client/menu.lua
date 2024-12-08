@@ -2,7 +2,7 @@
      --[[ STANLEY DEVELOPMENT STUDIOS ]]--
 --[[ https://discord.com/invite/uCKZJed3Gq ]]--
 
- 
+
 local MenuPool = NativeUI.CreatePool()
 local mainMenu = NativeUI.CreateMenu("Stretcher", "", 1250, 400)
 MenuPool:Add(mainMenu)
@@ -187,12 +187,3 @@ AddEventHandler("cl:OpenStretcherMenu", function()
         mainMenu:Visible(true)
     end
 end)
-
-
-
-
-
-
-
-
-

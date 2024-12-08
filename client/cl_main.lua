@@ -2,8 +2,12 @@
      --[[ STANLEY DEVELOPMENT STUDIOS ]]--
 --[[ https://discord.com/invite/uCKZJed3Gq ]]--
 
- 
+
 local stretchers = {}
+canStretcherMenu = false
+canStretcher = false
+canDelStretcher =false
+canMdStretcher = false
 
 RegisterNetEvent('cl:SyncStretchers')
 AddEventHandler('cl:SyncStretchers', function(updatedStretchers)
@@ -15,6 +19,20 @@ AddEventHandler('cl:SyncStretchers', function(updatedStretchers)
         end
     end
 end)
+
+RegisterNetEvent("cl:getIsAllowedRet")
+AddEventHandler("cl:getIsAllowedRet", function(access,value)
+    if access == "command.stretchermenu" then
+        canStretcherMenu = value
+    elseif access == "command.stretcher" then
+        canStretcher = value
+    elseif access == "command.delstretcher" then
+        canDelStretcher = value
+    elseif access == "command.mdstretcher" then
+        canMdStretcher = value
+    end
+end)
+
 
 RegisterNetEvent('cl:SyncMovingState')
 AddEventHandler('cl:SyncMovingState', function(netId, bool)

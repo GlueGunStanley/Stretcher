@@ -1,9 +1,18 @@
-
-     --[[ STANLEY DEVELOPMENT STUDIOS ]]--
+    --[[ STANLEY DEVELOPMENT STUDIOS ]]--
 --[[ https://discord.com/invite/uCKZJed3Gq ]]--
 
- 
+
 local stretchers = {}
+
+RegisterNetEvent("sv:getIsAllowed")
+AddEventHandler("sv:getIsAllowed", function(access)
+    local perms = IsPlayerAceAllowed(source, access)
+    if perms then
+        TriggerClientEvent("cl:getIsAllowedRet", source, access, perms)
+    else
+        TriggerClientEvent("cl:getIsAllowedRet", source, access, perms)
+    end
+end)
 
 RegisterNetEvent('sv:AddStretcherToTable')
 AddEventHandler('sv:AddStretcherToTable', function(netId)
@@ -75,16 +84,3 @@ AddEventHandler('onResourceStart', function(resourceName)
         end
     end
 end)
-
-
-
-
-
-
-
-
-
-
-
-
-

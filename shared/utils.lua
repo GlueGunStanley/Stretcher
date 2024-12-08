@@ -2,30 +2,74 @@
      --[[ STANLEY DEVELOPMENT STUDIOS ]]--
 --[[ https://discord.com/invite/uCKZJed3Gq ]]--
 
- 
 RegisterCommand("stretchermenu", function()
-    TriggerEvent("cl:OpenStretcherMenu")
-    TriggerEvent('chat:addSuggestion', '/stretchermenu', 'Opens the stretcher interaction menu.')
-end, Config.Permissions.stretchermenu)
+    if Config.Permissions.stretchermenu then
+        TriggerServerEvent("sv:getIsAllowed","command.stretchermenu")
+        Wait(1000)
+        if canStretcherMenu then 
+            TriggerEvent("cl:OpenStretcherMenu")
+            TriggerEvent('chat:addSuggestion', '/stretchermenu', 'Opens the stretcher interaction menu.')
+        else
+            print("You do not have permissions to interact with stretchers.")
+        end
+    else
+        TriggerEvent("cl:OpenStretcherMenu")
+        TriggerEvent('chat:addSuggestion', '/stretchermenu', 'Opens the stretcher interaction menu.')
+    end
+end)
 
-RegisterCommand('stretcher', function(source, args, rawCommand)
-    UTIL.SpawnStretcher('strykerpro')
-    TriggerEvent('chat:addSuggestion', '/stretcher', 'Spawn a stretcher directly infront of you.')
-end, Config.Permissions.stretcher)
+RegisterCommand('stretcher', function(args)
+    if Config.Permissions.stretcher then
+        TriggerServerEvent("sv:getIsAllowed","command.stretcher")
+        Wait(1000)
+        if canStretcher then 
+            UTIL.SpawnStretcher(Config.Stretcher.modelHash)
+            TriggerEvent('chat:addSuggestion', '/stretcher', 'Spawn a stretcher directly infront of you.')
+        else
+            print("You do not have permissions to add stretchers.")
+        end
+    else
+        UTIL.SpawnStretcher(Config.Stretcher.modelHash)
+        TriggerEvent('chat:addSuggestion', '/stretcher', 'Spawn a stretcher directly infront of you.')
+    end
+end)
 
-RegisterCommand('delstretcher', function(source, args, rawCommand)
-    UTIL.DeleteStretcher('strykerpro')
-    TriggerEvent('chat:addSuggestion', '/delstretcher', 'Deletes a nearby stretcher.')
-end, Config.Permissions.delstretcher)
+RegisterCommand('delstretcher', function(args)
+    if Config.Permissions.delstretcher then
+        TriggerServerEvent("sv:getIsAllowed","command.delstretcher")
+        Wait(1000)
+        if canDelStretcher then 
+            UTIL.DeleteStretcher(Config.Stretcher.modelHash)
+            TriggerEvent('chat:addSuggestion', '/delstretcher', 'Deletes a nearby stretcher.')
+        else
+            print('You do not have permissions to delete a stretcher.')
+        end
+    else
+        UTIL.DeleteStretcher(Config.Stretcher.modelHash)
+        TriggerEvent('chat:addSuggestion', '/delstretcher', 'Deletes a nearby stretcher.')
+    end
+end)
 
-RegisterCommand('mdstretcher', function(source, args, rawCommand)
-    UTIL.DeleteAllStretchers('strykerpro')
-    TriggerEvent('chat:addSuggestion', '/mdstretcher', 'Deletes all existing stretchers.')
-end, Config.Permissions.mdstretcher)
+RegisterCommand('mdstretcher', function(args)
+    if Config.Permissions.mdstretcher then
+        TriggerServerEvent("sv:getIsAllowed","command.mdstretcher")
+        Wait(1000)
+        if canMdStretcher then 
+            UTIL.DeleteAllStretchers(Config.Stretcher.modelHash)
+            TriggerEvent('chat:addSuggestion', '/mdstretcher', 'Deletes all existing stretchers.')
+        else
+            print('You do not have permissions to delete all stretchers.')
+        end
+    else
+        UTIL.DeleteAllStretchers(Config.Stretcher.modelHash)
+        TriggerEvent('chat:addSuggestion', '/mdstretcher', 'Deletes all existing stretchers.')
+        
+    end 
+end)
 
 RegisterNetEvent('cl:StretcherCleanUp')
 AddEventHandler('cl:StretcherCleanUp', function()
-    UTIL.DeleteAllStretchers('strykerpro')
+    UTIL.DeleteAllStretchers(Config.Stretcher.modelHash)
 end)
 
 UTIL = UTIL or {}
@@ -181,4 +225,3 @@ function UTIL.Notify(message)
     AddTextComponentString(message)
     DrawNotification(false, false)
 end
-

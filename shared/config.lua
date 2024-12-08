@@ -102,7 +102,3 @@ Config.Vehicles = {
         -- ZEAKOR MODIFICATIONS
         {modelHash = "f450", dist = 7.0, xOffset = 0.0, yOffset = -2.5, zOffset = 0.465, rotOffset = 0.0, doors = {"BRD", "BLD"}, powerload = false}, -- 2018 FORD F450
 }
-
-
-
-
